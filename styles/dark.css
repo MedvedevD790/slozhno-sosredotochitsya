@@ -1,12 +1,15 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background_color: #000028;
+  --main-text_color: #f1b2ce;
+  --title_color: #db00ff;
+  --title_shadow: #ff0070;
+  --hover_color: 1px solid rgba(255, 0, 112, 0.4);
+  --background_image: url(../images/cover-image-dark.png);
+  --rec_color: var(--title_shadow);
+  --title_background: var(--title_shadow);
+  --article-title_color: var(--background_color);
+  --section-title_color: var(--title_shadow);
+  --border_color: var(--main-text_color);
+  --corners_color: var(--title_shadow);
+  --link_shadow: var(--title_shadow);
 }
